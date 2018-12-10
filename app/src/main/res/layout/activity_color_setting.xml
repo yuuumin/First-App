@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/color_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            style="@style/color_radio_button"
+            android:id="@+id/radio_pink"
+            android:background="@color/settingColorPink"/>
+        <RadioButton
+            style="@style/color_radio_button"
+            android:id="@+id/radio_purple"
+            android:background="@color/settingColorPurple"/>
+        <RadioButton
+            style="@style/color_radio_button"
+            android:id="@+id/radio_blue"
+            android:background="@color/settingColorBlue"/>
+        <RadioButton
+            style="@style/color_radio_button"
+            android:id="@+id/radio_light_blue"
+            android:background="@color/settingColorLightBlue"/>
+        <RadioButton
+            style="@style/color_radio_button"
+            android:id="@+id/radio_green"
+            android:background="@color/settingColorLGreen"/>
+        <RadioButton
+            style="@style/color_radio_button"
+            android:id="@+id/radio_light_green"
+            android:background="@color/settingColorLightGreen"/>
+        <RadioButton
+            style="@style/color_radio_button"
+            android:id="@+id/radio_yellow"
+            android:background="@color/settingColorYellow"/>
+        <RadioButton
+            style="@style/color_radio_button"
+            android:id="@+id/radio_orange"
+            android:background="@color/settingColorOrange"/>
+
+    </RadioGroup>
+
+
+
+</LinearLayout>

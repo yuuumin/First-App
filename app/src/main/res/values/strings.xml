@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">時間割</string>
+    <string name="monday">月</string>
+    <string name="tuesday">火</string>
+    <string name="wednesday">水</string>
+    <string name="thursday">木</string>
+    <string name="friday">金</string>
+    
+    <string name="subject_name">科目名</string>
+    <string name="classroom">教室</string>
+    <string name="teacher">教員</string>
+    <string name="credit_amount">単位数</string>
+    <string name="credit">単位</string>
+    <string name="color">色</string>
+    
+    <string name="subject_attention">科目名を入力</string>
+    <string name="classroom_attention">教室を入力</string>
+    <string name="teacher_attention">教員名を入力</string>
+
+    <string name="storage">保存</string>
+    <string name="delete">授業を削除</string>
+
+    <string name="color_R">R</string>
+    <string name="color_G">G</string>
+    <string name="color_B">B</string>
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myfirstapp.TimeTableSettingActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/setting_text"
+            android:text="@string/subject_name"/>
+        <EditText
+            android:id="@+id/subject_text"
+            style="@style/setting_edit_text"
+            android:hint="@string/subject_attention"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/setting_text"
+            android:text="@string/classroom"/>
+        <EditText
+            android:id="@+id/classroom_text"
+            style="@style/setting_edit_text"
+            android:hint="@string/classroom_attention"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/setting_text"
+            android:text="@string/teacher" />
+        <EditText
+            android:id="@+id/teacher_text"
+            style="@style/setting_edit_text"
+            android:hint="@string/teacher_attention"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/setting_text"
+                android:text="@string/credit_amount" />
+            <EditText
+                android:id="@+id/credit_text"
+                style="@style/setting_edit_text"
+                android:layout_weight="1"
+                android:text="0"/>
+            <TextView
+                style="@style/setting_text"
+                android:text="@string/credit" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/setting_text"
+                android:text="@string/color" />
+
+            <TextView
+                android:id="@+id/color_text"
+                style="@style/setting_edit_text"
+                android:onClick="onClickColorSetting"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/delete"
+            android:onClick="onClickDeleteButton"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+    </LinearLayout>
+
+</LinearLayout>
