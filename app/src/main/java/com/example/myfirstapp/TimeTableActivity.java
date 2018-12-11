@@ -59,12 +59,12 @@ public class TimeTableActivity extends AppCompatActivity {
         mDB = mHelper.getWritableDatabase();
 
 
-        /** 親ビュー */
+        // 親ビュー
         LayoutInflater mScrollInflater = LayoutInflater.from(this);
         View mScrollView = mScrollInflater.inflate(R.layout.scroll_layout, null);
         LinearLayout mScrollLayout = mScrollView.findViewById(R.id.scroll_view);
 
-        /** 曜日親ビュー */
+        // 曜日親ビュー
         LayoutInflater mWeekTitleInflater = LayoutInflater.from(this);
         View mWeekTitleView = mWeekTitleInflater.inflate(R.layout.week_title_layout, null);
         LinearLayout mWeekTitleLayout = mWeekTitleView.findViewById(R.id.week_title_view);
@@ -72,7 +72,7 @@ public class TimeTableActivity extends AppCompatActivity {
 
         mScrollLayout.addView(mWeekTitleView);
 
-        /** 曜日子ビュー */
+        // 曜日子ビュー
         for(int i = 0 ; i < mWeek + 1 ; i++) {
             LayoutInflater mWeekTitleChildInflater = LayoutInflater.from(this);
             View mWeekTitleChildView = mWeekTitleChildInflater.inflate(R.layout.week_title_child_layout, null);
@@ -91,13 +91,13 @@ public class TimeTableActivity extends AppCompatActivity {
         }
 
         for(int i = 0 ; i < mjikan ; i++) {
-            /** 子ビュー */
+            // 子ビュー
             LayoutInflater mWeekInflater = LayoutInflater.from(this);
             View mWeekView = mWeekInflater.inflate(R.layout.week_layout, null);
             LinearLayout mWeekLayout = mWeekView.findViewById(R.id.week_view);
             mWeekView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, (mWindowWidth / mWeek) * 4 / 3));
 
-            /** 時間タイトルビュー */
+            // 時間タイトルビュー
             LayoutInflater mTimeTitleInflater = LayoutInflater.from(this);
             View mTimeTitleView = mTimeTitleInflater.inflate(R.layout.time_title_layout, null);
             mTimeTitleView.setLayoutParams(new LinearLayout.LayoutParams(mTitleWidth, ViewGroup.LayoutParams.MATCH_PARENT));
@@ -107,7 +107,7 @@ public class TimeTableActivity extends AppCompatActivity {
             mWeekLayout.addView(mTimeTitleView);
 
             for (int j = 0; j < mWeek; j++) {
-                /** 孫ビュー */
+                // 孫ビュー
                 int mViewId = (i + 1) * 10 + j + 1;
                 TextView mDayLayout = new TextView(this);
                 mDayLayout.setLayoutParams(new LinearLayout.LayoutParams(mWindowWidth / mWeek - 2, ViewGroup.LayoutParams.MATCH_PARENT));
@@ -121,9 +121,9 @@ public class TimeTableActivity extends AppCompatActivity {
                 }
                 mDayLayout.setOnClickListener(new View.OnClickListener() {
                     public void onClick (View view) {
+                        // 孫ビュー押下時の処理
                         Intent intent = new Intent(TimeTableActivity.this, TimeTableSettingActivity.class);
                         intent.putExtra("VIEW_ID", view.getId());
-                        intent.putExtra("ACTIVITY", "TimeTableActivity");
                         startActivity(intent);
                     }
                 });
@@ -180,14 +180,6 @@ public class TimeTableActivity extends AppCompatActivity {
         return point;
     }
 
-    /**
-     * 時間割孫ビュー押下
-     * */
-    public void onClickTimeTable(View view) {
-
-        Intent intent = new Intent(TimeTableActivity.this, TimeTableSettingActivity.class);
-        startActivity(intent);
-    }
 
     /**
      * 時間割科目データ取得

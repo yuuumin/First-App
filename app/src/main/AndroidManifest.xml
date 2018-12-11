@@ -20,9 +20,6 @@
         <activity android:name=".TimeTableSettingActivity">
         </activity>
 
-        <activity android:name=".ColorSettingActivity">
-        </activity>
-
     </application>
 
 </manifest>

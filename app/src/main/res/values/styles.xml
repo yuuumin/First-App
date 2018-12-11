@@ -45,4 +45,17 @@
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_weight">1</item>
     </style>
+
+    <style name="color_view">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:onClick">onClickColorView</item>
+    </style>
+
+    <style name="color_view_space">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
 </resources>

@@ -8,13 +8,15 @@
     <color name="colorWhite">#FFFFFF</color>
 
     <color name="colorGray">#808080</color>
-    <color name="settingColorPink">#C685A6</color>
-    <color name="settingColorPurple">#A685C6</color>
-    <color name="settingColorBlue">#8B8BC6</color>
-    <color name="settingColorLightBlue">#85A6C6</color>
-    <color name="settingColorLGreen">#85C68B</color>
-    <color name="settingColorLightGreen">#A6C685</color>
-    <color name="settingColorYellow">#C6C085</color>
-    <color name="settingColorOrange">#C6A685</color>
+    <color name="settingColorRed">#E5867B</color>
+    <color name="settingColorPink">#E67A99</color>
+    <color name="settingColorPurple">#B07BE5</color>
+    <color name="settingColorBlue">#7B86E5</color>
+    <color name="settingColorLightBlue">#7BC5E5</color>
+    <color name="settingColorTurquoise">#7BE5C5</color>
+    <color name="settingColorGreen">#7BE586</color>
+    <color name="settingColorLightGreen">#B0E57B</color>
+    <color name="settingColorYellow">#E5DA7B</color>
+    <color name="settingColorOrange">#E5B07B</color>
 
 </resources>
